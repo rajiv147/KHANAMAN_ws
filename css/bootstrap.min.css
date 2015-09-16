@@ -1943,6 +1943,10 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 
 
 
+
+
+
+
 .glyphicon {
 	position: relative;
 	top: 1px;
@@ -3138,10 +3142,10 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 	border-radius: 4px
 }
 }
+
 @media (min-width:768px) {
 .navbar-header {
-	float: left
-}
+	float: left;}
 }
 .navbar-collapse {
 	max-height: 340px;
@@ -4428,7 +4432,8 @@ button.close {
 	background-clip: padding-box;
 	outline: 0;
 	    margin-top: 40px;
-	    min-width: 450px;
+	    width: 100%;
+	   
 }
 }
 .modal-backdrop {
