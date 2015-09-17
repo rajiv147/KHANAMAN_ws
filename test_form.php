@@ -51,7 +51,7 @@ $(function($) {
 
 <!--hide show-->
 <script type="text/javascript">
-    $(function () {
+  /*  $(function () {
         $("#ddlPassport").change(function () {
             if ($(this).val() == "Y") {
                 $("#dvPassport").show();
@@ -59,7 +59,7 @@ $(function($) {
                 $("#dvPassport").hide();
             }
         });
-    });
+    });*/
 </script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
@@ -193,6 +193,14 @@ echo "</select>";
 </td>
 </form>
 <script type="text/javascript">
+        function ShowHideDiv() {
+            var Deliver = document.getElementById("Deliver");
+            var dvPassport = document.getElementById("dvPassport");
+            dvPassport.style.display = Deliver.value == "Y" ? "block" : "none";
+        }
+    </script> 
+    <!---->
+    <script type="text/javascript">
         function ShowHideDiv() {
             var Deliver = document.getElementById("Deliver");
             var dvPassport = document.getElementById("dvPassport");

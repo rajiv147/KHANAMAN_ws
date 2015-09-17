@@ -123,7 +123,7 @@ require('lib/header.php'); ?>
     <td></td>
   </tr>
 
-<td>Restaurant type   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<td>Restaurant type   &nbsp;&nbsp;
     <select>
       <option value="0">Select Type</option>
       <option value="N">Fine- Dining</option>
@@ -134,7 +134,24 @@ require('lib/header.php'); ?>
 </td>
 <td></td>
 
+</tr>
 
+
+<tr>
+
+<td><p>Address</p>
+    <textarea name="address"cols="30" rows="4"></textarea>
+</td>
+<td></td>
+
+
+
+
+
+
+<textarea name="address"cols="30" rows="4"></textarea>
+
+</tr>
 
 
   <tr>
@@ -171,7 +188,7 @@ echo "</select>";
   
    <tr>
   <td>Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <select name="deliver" id="Deliver" onchange="ShowHideDiv()">
+    <select name="deliver" id="Deliver" onchange="Show()">
       <option value="0">Delivery Status</option>
       <option value="N">No</option>
       <option value="Y">Yes</option>
@@ -179,14 +196,14 @@ echo "</select>";
     <br />
     <div id="dvPassport" style="display: none"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="text" id="txtPassportNumber" name="delivery_charges"   placeholder="Charges IN Rs" />
+      <input type="text" id="txtPassportNumber" name="delivery_charges"   placeholder="Charges IN Rs" required pattern="/^[-]?[0-9]*(,?[0-9]+\.?)?[0-9]+$/"/>
       <input type="number" id="txtPassportNumber" name="delivery_order" min="1" max="100" placeholder="Order Per Day" style="
     min-width: 147px;">
-      <input type="text" id="txtPassportNumber" name="minimum_order" placeholder="Minimum Order" style="
+      <input type="number" id="txtPassportNumber" name="minimum_order" placeholder="Minimum Order" style="
     margin-left: 96px;
     margin-top: 10px;">
       
-      <input type="text" id="txtPassportNumber" name="delivery_radius"   placeholder="Delivery Radius" />
+      <input type="number" id="txtPassportNumber" name="delivery_radius"   placeholder="Delivery Radius" />KM
     </div>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
     </div>
@@ -287,6 +304,12 @@ echo "</select>";
        <!-- <input type="text" name="date" required pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"> -->
       <input type="date" value="yyyy-mm-dd" class="input-medium search-query" onkeypress="return false">
                  </td>
+
+
+<!-- <input id="startdate" name="startdate" min="2013-01-01" max="2050-01-01" type="date">
+ -->
+
+
     <td></td>
   </tr>
 
@@ -314,7 +337,7 @@ echo "</select>";
 </td>
 </form>
 <script type="text/javascript">
-        function ShowHideDiv() {
+        function Show() {
             var Deliver = document.getElementById("Deliver");
             var dvPassport = document.getElementById("dvPassport");
             dvPassport.style.display = Deliver.value == "Y" ? "block" : "none";
@@ -326,7 +349,7 @@ echo "</select>";
         function ShowHideDiv() {
             var Deliver = document.getElementById("Deliver_second");
             var dvPassport = document.getElementById("dvPassport_two");
-            dvPassport.style.display = Deliver_second.value == "w" ? "block" : "none";
+            dvPassport_two.style.display = Deliver_second.value == "w" ? "block" : "none";
         }
     </script> 
 
