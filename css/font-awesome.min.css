@@ -14,6 +14,9 @@
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1;
+	
+font-size: 14px;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
@@ -25,7 +28,7 @@
 	vertical-align: -15%
 }
 .fa-2x {
-	font-size: 2em
+	
 }
 .fa-3x {
 	font-size: 3em
