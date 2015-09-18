@@ -149,7 +149,7 @@ require('lib/header.php'); ?>
 
 
 
-<textarea name="address"cols="30" rows="4"></textarea>
+<!--<textarea name="address"cols="30" rows="4"></textarea>-->
 
 </tr>
 
@@ -214,9 +214,9 @@ echo "</select>";
   <tr>
     <td>Average Order Amount
        <input type="radio" name="rs1" value="less_a" checked>Less Than Rs 200
-       <input type="radio" name="rs2" value="less_b">Rs. 200 – 500
-<input type="radio" name="rs3" value="less_c">Rs.  500 - 700
-<input type="radio" name="rs4" value="less_d">More Than Rs700
+       <input type="radio" name="rs1" value="less_b">Rs. 200 – 500
+<input type="radio" name="rs1" value="less_c">Rs.  500 - 700
+<input type="radio" name="rs1" value="less_d">More Than Rs700
 
 
                  </td>
