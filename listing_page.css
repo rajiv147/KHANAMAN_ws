@@ -41,6 +41,18 @@
 
 }
 
+
+
+.dicount_offer{
+  color: #f1270f;
+  font-family:Goudy Bookletter 1911, sans-serif;
+  
+  height: 50px;
+  margin-left: 418px;
+
+      display: inline-block;
+}
+
 .btn_menu
 {
   background: #3498db;
@@ -57,6 +69,8 @@
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  float: right;
+  margin-top: 30px;
 }
 
 .btn_menu:hover{
@@ -70,18 +84,58 @@
 }
 
 
+.hotal_pic{
 
+  /*box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);*/
+
+}
 
 .heading_area
 {
   color: #000;
-  font-size: 15px;
+  font-size: 20px;
   font-family:Copperplate / Copperplate Gothic Light, sans-serif;
-  border-bottom: 2px solid #000;
+  
 
 }
 
 
+
+.food_menu
+{
+  width:100%;
+  height: auto;
+  color: #000;
+  
+}
+
+
+.deliver_status
+{
+  width: 300px;
+  height: auto;
+ 
+  margin-top: 30px;
+  
+}
+
+.sub_deliver_status
+{
+  
+  display: inline-block;
+  
+  color: #C7B1AA;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+
+}
+
+.try{
+  float: right;
+  display: block;
+}
 
 
 @media screen and (max-width: 800px) {
@@ -90,4 +144,36 @@
     
     display: none;
   }
+
+
+.heading_area{
+
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.dicount_offer{
+  height: auto;
+    
+    margin-left: 26px;
+}
+
+.fa
+{
+  float: left;
+
+}
+
+/*dicount_offer img{
+  
+  padding-top: 230px;
+float: left;
+}
+
+.dicount_offer p
+{
+padding-top: 168px;
+float: left;
+}*/
+
 }
