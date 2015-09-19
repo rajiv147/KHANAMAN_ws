@@ -66,7 +66,7 @@ $(function($) {
 <body>
 <div id="main_container">
 <?php
-require('lib/header.php'); ?>
+/*require('lib/header.php');*/ ?>
 <div class="main_content">
 <div class="center_content">
 <br />
